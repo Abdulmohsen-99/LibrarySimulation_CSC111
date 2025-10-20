@@ -292,11 +292,11 @@ public class LibrarySimulator {
 						System.out.printf("The Total Revenue is %.2f SAR ",totalRevenue);
 					}
 					else if(AdminChoice==2) {                      //to compare operations
-						if(totalBorrow > totalReturn) {
+						if(totalBorrows > totalReturns) {
 							System.out.println("The Most frequent Operation is borrow");
 						} 
 
-						else if(totalBorrow < totalReturn) {
+						else if(totalBorrows < totalReturns) {
 							System.out.println("The Most frequent Operation is Return");
 						} 
 						else {
@@ -326,6 +326,7 @@ public class LibrarySimulator {
 			}
 		}
 	}}
+
 
 
 
