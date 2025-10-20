@@ -8,7 +8,7 @@ public class UnitConverter {
 
 		Scanner input = new Scanner(System.in);
 		input.useLocale(Locale.US);
-		System.out.println("Enter the units (m_ft, L_gal, SAR_USD): ");
+		System.out.println("Enter the units (m_ft, L_gal, SAR_USD): "); //السلام عليكم
 		String Unit = input.next();
 		Unit = Unit.toLowerCase(); // To entry any value entered by the user
 
@@ -63,3 +63,4 @@ public class UnitConverter {
 		}
 	}
 }
+
