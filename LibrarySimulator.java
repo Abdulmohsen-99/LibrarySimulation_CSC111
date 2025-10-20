@@ -41,6 +41,7 @@ public class LibrarySimulator {
 			System.out.print("Enter your choice (1-3): ");
 
 			int choice = input.nextInt();	
+	// users menu
 			if (choice == 1) {
 				System.out.println("--- User Account Selection ---");
                 System.out.println("1. " + ID_1 + ": " + NAME_1);
@@ -326,6 +327,7 @@ public class LibrarySimulator {
 			}
 		}
 	}}
+
 
 
 
