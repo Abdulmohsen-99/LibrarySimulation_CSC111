@@ -8,7 +8,8 @@ package LibrarySimulator;
 import java.util.Scanner;
 
 public class LibrarySimulator {
-   final static String NAME_1 = "Ali";
+ //constant&varibals
+	final static String NAME_1 = "Ali";
     final static int ID_1 = 101;
     static int booksBorrowed_1 = 0; 
     
@@ -325,5 +326,6 @@ public class LibrarySimulator {
 			}
 		}
 	}}
+
 
 
