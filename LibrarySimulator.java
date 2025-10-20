@@ -290,7 +290,7 @@ public class LibrarySimulator {
 					System.out.println("Enter your choice (1-3): ");
 					int AdminChoice =input.nextInt();
 					if(AdminChoice==1) {                                          //to view Total Revenue
-						System.out.printf("The Total Revenue is %.2f SAR ",totalRevenue);
+						System.out.printf("The Total Revenue is %.2f $ ",totalRevenue);
 					}
 					else if(AdminChoice==2) {                      //to compare operations
 						if(totalBorrows > totalReturns) {
@@ -327,6 +327,7 @@ public class LibrarySimulator {
 			}
 		}
 	}}
+
 
 
 
