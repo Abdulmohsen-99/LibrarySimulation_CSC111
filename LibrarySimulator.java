@@ -115,7 +115,7 @@ public class LibrarySimulator {
                                 System.out.println("--- Session Activity Summary ---");
                                 System.out.println("Number of books borrowed (this session):\t" + sessionBorrows);
                                 System.out.println("Number of books returned (this session):\t" + sessionReturns);
-                                System.out.printf("Total fees incurred (this session):%.2f $ " +sessionFees);
+                                System.out.printf("Total fees incurred (this session):%.2f $ ",sessionFees);
                                 break;
                                 
                             case 5:
@@ -186,7 +186,7 @@ public class LibrarySimulator {
                                 System.out.println("--- Session Activity Summary ---");
                                 System.out.println("Number of books borrowed (this session):\t" + sessionBorrows);
                                 System.out.println("Number of books returned (this session):\t" + sessionReturns);
-                                System.out.printf("Total fees incurred (this session)%.2f $"+ (sessionFees) );
+                                System.out.printf("Total fees incurred (this session)%.2f $",(sessionFees) );
                                 break;
                                 
                             case 5:
@@ -209,7 +209,7 @@ public class LibrarySimulator {
                     do {
                         System.out.println("--- Salman (" + ID_3 + ") Operations Menu ---");
                         System.out.println("1. View Borrowed Books Count");
-                        System.out.println("2. Borrow Book (Fee: " + String.format("%.2f", BORROW_FEE) + " $)");
+                        System.out.printf("2. Borrow Book (Fee: " %.2f$", BORROW_FEE);
                         System.out.println("3. Return Book (No Fee)");
                         System.out.println("4. View Session Summary");
                         System.out.println("5. Exit to Main Menu");
@@ -257,7 +257,7 @@ public class LibrarySimulator {
                                 System.out.println("--- Session Activity Summary ---");
                                 System.out.println("Number of books borrowed (this session):\t" + sessionBorrows);
                                 System.out.println("Number of books returned (this session):\t" + sessionReturns);
-                                System.out.println("Total fees incurred (this session):\t" + String.format("%.2f", sessionFees) + " $");
+                                System.out.printf("Total fees incurred (this session):%.2f$", (sessionFees);
                                 break;
                                 
                             case 5:
@@ -327,6 +327,7 @@ public class LibrarySimulator {
 			}
 		}
 	}}
+
 
 
 
