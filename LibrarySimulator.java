@@ -139,7 +139,7 @@ public class LibrarySimulator {
 					do {
 						System.out.println("--- Mohammed (" + ID_2 + ") Operations Menu ---");
 						System.out.println("1. View Borrowed Books Count");
-						System.out.println("2. Borrow Book (Fee: " + String.format("%.2f", BORROW_FEE) + " $)");
+						System.out.printf("2. Borrow Book (Fee:%.2f$)\n", BORROW_FEE);
 						System.out.println("3. Return Book (No Fee)");
 						System.out.println("4. View Session Summary");
 						System.out.println("5. Exit to Main Menu");
@@ -328,6 +328,7 @@ public class LibrarySimulator {
 			}
 		}
 	}}
+
 
 
 
