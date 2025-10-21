@@ -32,7 +32,8 @@ public class LibrarySimulator {
 		Scanner input = new Scanner(System.in);
 
 		while (true) {
-
+			
+	// main menu
 			System.out.println("Welcome to The Library Simulator!");
 			System.out.println("Please select an option:");
 			System.out.println("1. Login as User");
@@ -327,6 +328,7 @@ public class LibrarySimulator {
 			}
 		}
 	}}
+
 
 
 
