@@ -7,6 +7,10 @@ public class Member {
     private int numBorrows;
     private int numReturns;
     private double sessionFees;
+    
+    // define constants
+    public static final int MAX_BOOKS = 5;
+    public static final double BORROW_FEE = 0.50;
 
     // static totals
     public static double TotalRevenue = 0;
@@ -19,10 +23,6 @@ public class Member {
         id = 0;
         name = "";
         borrowedCount = 0;
-        numViewBorrowed = 0;
-        numBorrows = 0;
-        numReturns = 0;
-        sessionFees = 0;
     }
 
     // main constructor
@@ -30,20 +30,19 @@ public class Member {
         this.id = id;
         this.name = name;
         this.borrowedCount = borrowedCount;
-        numViewBorrowed = 0;
-        numBorrows = 0;
-        numReturns = 0;
-        sessionFees = 0;
+    }
+    public String getName() {
+        return name;
     }
 
     // check borrow
     private boolean canBorrow() {
-        return borrowedCount < 5;
+        return borrowedCount < MAX_BOOKS;
     }
 
     // check return
     private boolean canReturn() {
-        return borrowedCount >= 1;
+        return borrowedCount > 0;
     }
 
     // show count
@@ -59,12 +58,12 @@ public class Member {
             borrowedCount++;
             numBorrows++;
             TotalBorrows++;
-            sessionFees += 0.5;
-            TotalRevenue += 0.5;
+            sessionFees += BORROW_FEE;
+            TotalRevenue += BORROW_FEE;
             System.out.println("SUCCESS: Borrowed.");
             return true;
         }
-        System.out.println("ERROR: Cannot borrow.");
+        System.out.println("ERROR: Cannot borrow. Max is " + MAX_BOOKS );
         return false;
     }
 
@@ -92,7 +91,6 @@ public class Member {
 
     // reset session
     public void reset() {
-        borrowedCount = 0;
         numViewBorrowed = 0;
         numBorrows = 0;
         numReturns = 0;
