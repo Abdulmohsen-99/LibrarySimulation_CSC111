@@ -1,3 +1,9 @@
+/*
+ * https://github.com/Abdulmohsen-99/LibrarySimulation_CSC111
+ * [Abdulmohsen Alabdulkaream] ID: 446107134
+ * [Rayan Alaseed] ID: 446104338
+ * [Abdulelah Alhoshan] ID: 446101982
+ */
 public class Member {
 
     private int id;
